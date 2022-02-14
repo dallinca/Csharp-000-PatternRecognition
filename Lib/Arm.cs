@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 namespace PR.Lib {
     /*
      * Segment - Small portion of movement in the Arm. If another Arm has movement and the current
-     * Arm does not, the segment for the current Arm will be null.
-     * KeySegment - Each segment in this arm that is not null (implying movement).
+     * Arm does not, the segment for the current Arm will be null. Has only a sequenceId.
+     * KeySegment - Each segment in this arm that is not null (implying movement). Has both a
+     * sequenceId as well as a successiveId.
      * SequenceId - The ID of the segment normalized across all segments in all Arms of the Pattern.
      * Segment SequenceId -
      * KeySegment SequenceId -
